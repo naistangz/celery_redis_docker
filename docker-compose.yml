@@ -18,7 +18,7 @@ services:
       - pgdb
       - redis
   celery:
-    bulid: .
+    build: .
     command: celery worker --app=celery_redis_setup --loglevel=info
     volumes:
       - .:/usr/src/app
